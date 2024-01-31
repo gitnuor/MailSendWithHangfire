@@ -1,0 +1,17 @@
+﻿@model RemainderModel
+
+<form asp-action="ScheduleReminder" method="post">
+    <div>
+        <label>Email:</label>
+        <input type="email" name="email" required />
+    </div>
+    <div>
+        <label>Subject:</label>
+        <input type="text" name="subject" required />
+    </div>
+    <div>
+        <label>Body:</label>
+        <textarea name="body" required></textarea>
+    </div>
+    <button type="submit">Schedule Reminder</button>
+</form>
